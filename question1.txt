@@ -1,0 +1,28 @@
+Advanced File Management
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+#Solution
+pwd
+mkdir project-files
+ls
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old 
+mv draft.docx old
+mv summary.docx final_summary.docx
+cp final_summary.docx old
+rm report_backup.docx
+
+#Approach 
+1. I run the command pwd to check the current directory location
+2. Created a folder named project-files using mkdir
+3. Ran the ls command to check if folder is Created
+4. Located inside project-files using cd
+5. Made three new files using touch 
+6. copied report.docx and renamed it report_backup.docx
+7. made a new folder named old 
+moved draft.docx into old 
+renamed summary.docx to final_summary using mv command
+copied final_summary.docx into old
+removed report_backup.docx using rm command
