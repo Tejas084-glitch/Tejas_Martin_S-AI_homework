@@ -1,0 +1,24 @@
+Create a Project Folder Structure
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+#Solution
+find create-service
+cat create-service
+echo "#!/bin/bash" > create-service
+echo 'mkdir -p service/controllers' >> create-service
+echo 'mkdir -p service/models' >> create-service
+echo 'mkdir -p service/routes' >> create-service
+echo 'mkdir -p service/middleware' >> create-service
+echo 'echo "API Service" > service/README.md' >> create-service
+echo 'echo "console.log(\"Server started\");" > service/server.js' >> create-service
+ls -la
+chmod +x create-service
+./create-service
+
+#Approach
+1. To find the create-service file, I used the find command 
+2. I checked the content that was written in create-service using cat command and checked what were the errors
+3. I fixed the errors in the create-service command
+4. I used ls -la to check the permissions for create-service
+5. Gave the execute permissions to create-service 
+6. Finally executed the create-service command
