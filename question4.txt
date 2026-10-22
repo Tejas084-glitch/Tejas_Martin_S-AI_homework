@@ -1,0 +1,15 @@
+Deployment Project Permissions
+https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+#Solution
+chmod 700 deployment/app/server.py deployment/app/handler.py deployment/app/settings.py
+chmod 770 deployment/datasets deployment/datasets/train.csv deployment/datasets/test.csv
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/start.sh deployment/bin/stop.sh deployment/bin/healthcheck.sh
+
+
+#Approach
+1. I used chmod 700 to change the permissions to the given set of permissions for all the python files inside deployment/app without going inside the deployment directory by writing the Path for every file
+2. Used chmod 770 to change the permissions to the given set of permissions for datasets and the file inside it without directing into deployment by writing its Path
+3. Used chmod 644 to change the permissions to the given set of permissions for OVERVIEW.md by writing its path 
+4. Used chmod 755 to change the permissions to the given set of permissions for all the shell script files inside the bin directory by writing the path to each file
