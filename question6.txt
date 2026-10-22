@@ -1,0 +1,20 @@
+Simplify the Compilation Process
+https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+#Solution
+touch build.sh 
+which bash
+echo "#!/usr/bin/bash" >> build.sh
+echo "gcc hello.c -o hello" >> build.sh
+chmod +x build.sh
+./build.sh
+./hello
+
+#Approach
+1. I created a shell script named build.sh using touch
+2. Found the path of bash using which bash
+3. Wrote the path with shebang operator for the file to directly execute using echo and >>
+4. Used gcc to compile hello.c and -o is used to name the compiled file. Wrote this in the shell script using echo
+5. Gave the execute permission to the shell script
+6. Executed the shell script
+7. Lastly executing the newly compiled hello script
