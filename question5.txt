@@ -1,0 +1,19 @@
+Execute a Python Script Directly
+https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+#Solution
+touch hello.py
+which python3
+echo "#!/usr/bin/env python3" >> hello.py
+echo 'print("Hello from Python")' >> hello.py
+chmod +x hello.py
+./hello.py
+
+
+#Approach
+1. Created a file named hello.py using touch
+2. Found the path for python3 using which 
+3. Using shebang operator wrote the path of python3 in hello.py for the python file to execute directly. Wrote this using echo command with >> operator in hello.py
+4. Wrote the python code which is required to be executed using echo and >> operator in hello.py
+5. Gave the file execute permission to execute it 
+6. Finally executing the file directly by ./hello.py 
