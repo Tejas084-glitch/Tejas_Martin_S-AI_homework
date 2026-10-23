@@ -1,0 +1,24 @@
+The Internship Project Setup
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+#Solution
+cd client-app
+git init
+echo "Content" >> index.html
+echo "idk" >> app.js 
+git add index.html app.js
+git commit -m "Initial client files"
+git log --oneline
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+
+
+#Approach
+1. Navigated into client-app
+2. Initated Git in the client-app directory
+3. Wrote some content into index.html and app.js before staging them as directed
+4. Staged both the files
+5. Made the First commit 
+6. Used git log to check the if the commit has been made 
+7. Registered the remote github repository as origin
+8. Pushed the commit for the first time using git push -u
