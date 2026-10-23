@@ -1,0 +1,22 @@
+API-Service Directory Workflow
+https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+#Solution
+cd api-service
+git init
+git add README.md 
+git commit -m "Add documentation"
+git add server.js routes.js package.json
+git commit -m "Add server files"
+git status
+git log --oneline
+
+
+#Approach
+1. I first navigated into api-service
+2. Initialized Git using git init
+3. staged README.md using git add 
+4. Made the first commit with a message using git commit -m
+5. Then staged three more files together as it was mentioned
+6. Made the second commit with a message
+7. used git status and git log as mentioned in the Question
