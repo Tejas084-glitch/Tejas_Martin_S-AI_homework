@@ -1,0 +1,26 @@
+The Missing Project Credentials
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+#Solution
+s
+cd EventApp
+ls -a 
+#cat .debug
+#cat app.js 
+#cat README.md
+ls -a assets
+ls -a config
+cat config/.api_key
+cat config/.env
+cat config/.env >> db_password.txt
+
+
+#Approach
+1. I first checked the contents present in the box directory
+2. Then i navigated into EventApp
+3. I checked the contents in all the files (The Password was not in them)
+4. I listed the files and hidden files in the subdirectories in the EventApp directory
+5. Since assets did not have any hidden file i figured out that the Password is not present in any file inside assets
+6. After listing all the files and hidden files in config I found two of the hidden files which could have been potentially holding the Password
+7. After checking both of them I found the key in config/.env
+8. Since the Password is dynamic so I had the concatinate the file itself using cat and the >> in the new file db_password.txt
