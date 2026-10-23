@@ -1,0 +1,32 @@
+Build Pipeline Directory Tree
+https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
+#Solution
+mkdir pipeline
+cd pipeline
+mkdir stages env artifacts 
+mkdir stages/build stages/test
+mkdir -p stages/test/unit/integration
+mkdir env/staging env/prod
+mkdir artifacts/old
+
+chmod 750 stages
+chmod 770 artifacts
+chmod 700 env
+
+cd stages/build
+touch app.py config.json NOTES.md
+echo "Build stage initialized." > NOTES.md
+cd ../.. 
+cd artifacts/old 
+touch build.log test.log deploy.log 
+chmod 640 build.log test.log deploy.log 
+
+
+#Approach 
+1. First I made the directory structure that which was asked to be made.
+2. Then I changed the permissions to the given permissions for each of the directories made inside pipeline
+3. Created three files inside pipeline/stages/build
+4. Appended a line in one of those files using echo and > Operator
+5. Navigated back into pipeline and Created three files inside pipeline/artifacts/old
+6. Changed permissions to the given set of permissions for all of the three files
